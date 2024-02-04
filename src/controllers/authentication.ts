@@ -1,7 +1,7 @@
 import express from 'express';
 
 import { getUserByEmail, createUser } from '../db/users';
-import { authentication, random } from '../helpers';
+import { authentication, random, isValidEmail, isValidPassword, isValidUsername } from '../helpers';
 
 export const login = async (req: express.Request, res: express.Response) => {
     try {
@@ -49,6 +49,18 @@ export const register = async (req: express.Request, res: express.Response) => {
 
         if(existingUser) {
             return res.sendStatus(400);
+        }
+
+        if(!isValidEmail(email)) {
+            return res.status(400).send('Invalid Email');
+        }
+
+        if(!isValidUsername(username)){
+            return res.status(400).send('Invalid Username');
+        }
+
+        if(!isValidPassword(password)){
+            return res.status(400).send('Invalid Password. Password must be 8-16 characters long, containing letters, numbers and special character');
         }
 
         const salt = random();

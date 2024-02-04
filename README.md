@@ -15,8 +15,11 @@ This is an User Authentication Manager API made using NEXT.js and Typescript.
 
 ## Documentation
 
-[Swagger Doc](http://localhost:8080/api-docs)
+[Local Swagger Doc](http://localhost:8080/api-docs)
 
+## Postman Collection
+
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/14260052-d72ea614-3ee4-4c08-ac84-90598c1474f4?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D14260052-d72ea614-3ee4-4c08-ac84-90598c1474f4%26entityType%3Dcollection%26workspaceId%3Ddebcb504-6627-43eb-8b3e-95b284c7b792)
 
 ## Run Locally
 
@@ -56,10 +59,13 @@ Start the server
 ```json
 {
     "email": "jondoe@email.com",
-    "password": "password",
-    "username": "JonDoe"
+    "password": "Pwd&6767",
+    "username": "JonDoe12"
 }
 ```
+| Description |
+| :- |
+| Validation pattern is applied for email, username and password|
 
 #### Login
 
@@ -70,7 +76,7 @@ Start the server
 ```json
 {
     "email": "jondoe@email.com",
-    "password": "password"
+    "password": "Pwd&6767"
 }
 ```
 
