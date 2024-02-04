@@ -13,6 +13,11 @@ This is an User Authentication Manager API made using NEXT.js and Typescript.
 - Delete User
 
 
+## Documentation
+
+[Swagger Doc](http://localhost:8080/api-docs)
+
+
 ## Run Locally
 
 Clone the project

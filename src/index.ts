@@ -7,6 +7,8 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import router from './router';
 import dotenv from 'dotenv';
+import swaggerUi from "swagger-ui-express";
+import swaggerOutput from "./swagger_output.json";
 
 dotenv.config();
 
@@ -32,4 +34,6 @@ mongoose.Promise = Promise;
 mongoose.connect(mongo_url);
 mongoose.connection.on('error', (error: Error) => console.log(error));
 
-app.use('/', router())
+app.use('/', router());
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerOutput));
