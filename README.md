@@ -19,7 +19,14 @@ This is an User Authentication Manager API made using NEXT.js and Typescript.
 
 ## Postman Collection
 
-[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/10352918-7a7d3681-8a61-49c0-904e-52c1b698b9b8?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D10352918-7a7d3681-8a61-49c0-904e-52c1b698b9b8%26entityType%3Dcollection%26workspaceId%3De5a5314a-c857-4e38-8a96-1a274751454a)
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/14260052-d72ea614-3ee4-4c08-ac84-90598c1474f4?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D14260052-d72ea614-3ee4-4c08-ac84-90598c1474f4%26entityType%3Dcollection%26workspaceId%3Ddebcb504-6627-43eb-8b3e-95b284c7b792)
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`MONGO_URL` => Use your own mongo db environment
+ url
+
 
 ## Run Locally
 
@@ -76,7 +83,7 @@ Start the server
 ```json
 {
     "email": "jondoe@email.com",
-    "password": "Pwd&6767"
+    "password": "password"
 }
 ```
 
