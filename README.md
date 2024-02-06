@@ -1,7 +1,7 @@
 
 # User Auth Manager API
 
-This is an User Authentication Manager API made using NEXT.js and Typescript.
+This is an User Authentication Manager API made using Express and Typescript.
 
 
 ## Features
